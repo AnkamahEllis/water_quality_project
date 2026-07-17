@@ -30,4 +30,4 @@ input_df = pd.DataFrame([{
 
 if st.button("Predict"):
     prediction = model.predict(input_df)[0]
-    st.success(f"Predicted coagulant dosage: {prediction:.3f}")
+    st.success(f"Predicted coagulant dosage (kg/day): {prediction:.3f}")
