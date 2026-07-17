@@ -6,9 +6,8 @@ import numpy as np
 
 st.title("Water Quality Prediction App")
 
-# Display project image from URL
-image_url = "https://www.citinewsroom.com/wp-content/uploads/2026/02/ODASO-2.jpeg"
-st.image(image_url, caption="Water treatment at Odaso, GH", use_column_width=True)  # [1]
+# Display local image (relative path from app.py)
+st.image("assets/odaso.jpeg", caption="Water treatment at Odaso, GH", use_column_width=True)  # [1]
 
 @st.cache_resource
 def load_model():
